@@ -473,3 +473,7 @@ PRODUCT_COPY_FILES += \
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
+
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GCamGo
