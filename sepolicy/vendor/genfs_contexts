@@ -1,3 +1,6 @@
+# Battery Saver
+genfscon sysfs /module/battery_saver/parameters/enabled                                                                                              u:object_r:sysfs_battery_saver:s0
+
 # Camera
 genfscon proc /qcom_flash                                                  u:object_r:cam_proc:s0
 genfscon proc /devinfo/lcd                                                 u:object_r:cam_proc:s0

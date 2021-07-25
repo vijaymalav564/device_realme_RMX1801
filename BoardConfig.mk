@@ -158,6 +158,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Power
 # TARGET_USES_INTERACTION_BOOST := true
 
+# Battery Saver
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power-libperfmgr/power/power-mode.cpp
+
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
