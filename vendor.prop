@@ -84,6 +84,9 @@ ro.hardware.vulkan=sdm660
 # DRM
 drm.service.enabled=true
 
+# Fingerprint
+fingerprint.nocleanup=true
+
 # FM
 vendor.hw.fm.init=0
 
