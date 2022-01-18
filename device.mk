@@ -228,6 +228,31 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    libgnsspps \
+    libsynergy_loc_api \
+    libgps.utils \
+    liblocation_api \
+    libwifi-hal-ctrl
+
+PRODUCT_PACKAGES += \
+    apdr.conf \
+    gps.conf \
+    gnss_antenna_info.conf \
+    flp.conf \
+    izat.conf \
+    lowi.conf \
+    sap.conf \
+    xtwifi.conf
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
