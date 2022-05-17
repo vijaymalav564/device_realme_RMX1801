@@ -26,7 +26,7 @@ allow hal_camera_default sysfs_leds:dir { search };
 allow hal_camera_default sysfs_net:dir { search };
 allow hal_camera_default sysfs_net:file { read open };
 allow hal_camera_default sysfs:file { read open };
-
+allow hal_camera_default system_prop:file { read };
 allow hal_camera_default system_file:file r_file_perms;
 
 get_prop(hal_camera_default, camera_prop)
