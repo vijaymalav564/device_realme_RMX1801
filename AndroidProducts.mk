@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fuse_RMX1801.mk
+    $(LOCAL_DIR)/lineage_RMX1801.mk
 
 COMMON_LUNCH_CHOICES := \
-    fuse_RMX1801-user \
-    fuse_RMX1801-userdebug \
-    fuse_RMX1801-eng
+    lineage_RMX1801-user \
+    lineage_RMX1801-userdebug \
+    lineage_RMX1801-eng
