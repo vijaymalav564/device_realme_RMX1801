@@ -101,7 +101,7 @@ debug.sdm.support_writeback=0
 debug.cpurend.vsync=false
 
 # Media
-debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank.sw-audio=16
 debug.stagefright.omx_default_rank=0
 
 # OEM Unlock reporting
