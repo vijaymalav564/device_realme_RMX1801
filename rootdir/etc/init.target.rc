@@ -154,15 +154,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
    user root
    group root
 
-service thermal-engine /vendor/bin/thermal-engine
-   class main
-   user root
-   socket thermal-send-client stream 0666 system system
-   socket thermal-recv-client stream 0660 system system
-   socket thermal-recv-passive-client stream 0666 system system
-   socket thermal-send-rule stream 0660 system system
-   group root
-
 service adsprpcd_root /vendor/bin/adsprpcd
    class main
    user media
@@ -237,3 +228,9 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
 on property:sys.boot_completed=1
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
+
+on property:sys.boot_completed=1
+    write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/swappiness 100
+    write /sys/block/zram0/comp_algorithm zstd
+    swapon_all /vendor/etc/fstab.qcom

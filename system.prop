@@ -82,13 +82,18 @@ ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 
+# SkiaGL
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Zram-writeback
 ro.zram.mark_idle_delay_mins=60 
-ro.zram.first_wb_delay_mins=180
+ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
 #Zygote
