@@ -30,7 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-
+TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_NAME := lineage_RMX1801
 PRODUCT_DEVICE := RMX1801
 PRODUCT_MANUFACTURER := OPPO
